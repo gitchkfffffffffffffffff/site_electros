@@ -224,6 +224,11 @@ body {
     text-align: center;
 }
 
+.price-actions {
+    margin-top: 28px;
+    text-align: center;
+}
+
 /* Features */
 .features {
     display: grid;
@@ -249,14 +254,11 @@ body {
 }
 
 /* Contact */
-.contact-info-centered {
-    max-width: 480px;
-    margin: 0 auto;
-    text-align: center;
-    background: #fff;
-    padding: 36px 28px;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
 }
 
 .contact-info p {
@@ -276,6 +278,36 @@ body {
 
 .contact-info a:hover {
     text-decoration: underline;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    background: #fff;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #1e3a8a;
+}
+
+.contact-form button {
+    border: none;
 }
 
 /* Footer */
@@ -306,6 +338,10 @@ body {
 
     .hero h1 {
         font-size: 1.8rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
     }
 
     .price-table th,
