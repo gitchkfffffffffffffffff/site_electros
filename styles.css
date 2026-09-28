@@ -249,16 +249,23 @@ body {
 }
 
 /* Contact */
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: start;
+.contact-info-centered {
+    max-width: 480px;
+    margin: 0 auto;
+    text-align: center;
+    background: #fff;
+    padding: 36px 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
 }
 
 .contact-info p {
     margin-bottom: 12px;
-    font-size: 1rem;
+    font-size: 1.05rem;
+}
+
+.contact-info p:last-child {
+    margin-bottom: 0;
 }
 
 .contact-info a {
@@ -269,48 +276,6 @@ body {
 
 .contact-info a:hover {
     text-decoration: underline;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    background: #fff;
-    padding: 28px;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 12px 16px;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
-    font-family: inherit;
-    font-size: 1rem;
-    resize: vertical;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border-color: #1e3a8a;
-}
-
-.contact-form button {
-    background: #fbbf24;
-    color: #0f172a;
-    border: none;
-    padding: 14px;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-.contact-form button:hover {
-    background: #f59e0b;
 }
 
 /* Footer */
@@ -341,10 +306,6 @@ body {
 
     .hero h1 {
         font-size: 1.8rem;
-    }
-
-    .contact-grid {
-        grid-template-columns: 1fr;
     }
 
     .price-table th,
